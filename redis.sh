@@ -6,3 +6,4 @@ yum install redis-6.2.7 -y
 
 systemctl enable redis
 systemctl start redis
+
