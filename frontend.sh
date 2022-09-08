@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+# roboshop - frontend support
+
+set -e
+
 yum install nginx -y
 systemctl enable nginx
 systemctl start nginx
