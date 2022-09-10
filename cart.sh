@@ -21,7 +21,7 @@ unzip -o /tmp/cart.zip &>>/tmp/cart.log
 mv cart-main cart &>>/tmp/cart.log
 cd cart &>>/tmp/cart.log
 
-echo installingnodeJS Dependencies
+echo installing nodeJS Dependencies
 npm install &>>/tmp/cart.log
 
 echo confguring cart SystemD service
