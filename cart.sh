@@ -6,7 +6,7 @@ curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>/tmp/cart.log
 echo installing nodeJS
 yum install nodeJS -y &>>/tmp/cart.log
 
-echo adding application content
+echo adding application user
 useradd roboshop &>>/tmp/cart.log
 
 echo downloading application content
