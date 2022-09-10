@@ -24,7 +24,7 @@ cd cart &>>/tmp/cart.log
 echo installing nodeJS Dependencies
 npm install &>>/tmp/cart.log
 
-echo confguring cart SystemD service
+echo configuring cart SystemD service
 mv /home/roboshop/cart/systemd.service /etc/systemd/system/cart.service &>>/tmp/cart.log
 systemctl daemon-reload &>>/tmp/cart.log
 
