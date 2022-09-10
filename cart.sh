@@ -9,7 +9,7 @@ yum install nodejs -y &>>/tmp/cart.log
 echo adding application content
 useradd roboshop &>>/tmp/cart.log
 
-echo download application content
+echo downloading application content
 curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/cart/archive/main.zip" &>>/tmp/cart.log
 cd /home/roboshop &>>/tmp/cart.log
 
@@ -24,7 +24,7 @@ cd cart &>>/tmp/cart.log
 echo installing nodeJS Dependencies
 npm install &>>/tmp/cart.log
 
-echo configuring cart SystemD service
+echo Configuring cart SystemD service
 mv /home/roboshop/cart/systemd.service /etc/systemd/system/cart.service &>>/tmp/cart.log
 systemctl daemon-reload &>>/tmp/cart.log
 
