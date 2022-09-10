@@ -9,7 +9,7 @@ yum install nodejs -y &>>/tmp/cart.log
 echo adding application content
 useradd roboshop &>>/tmp/cart.log
 
-echo download aqplication content
+echo download application content
 curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/cart/archive/main.zip" &>>/tmp/cart.log
 cd /home/roboshop &>>/tmp/cart.log
 
