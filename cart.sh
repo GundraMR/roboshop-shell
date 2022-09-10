@@ -1,10 +1,10 @@
 set -e
 
-echo setting nodejs repos
+echo setting nodeJS repos
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>/tmp/cart.log
 
 echo installing nodeJS
-yum install nodejs -y &>>/tmp/cart.log
+yum install nodeJS -y &>>/tmp/cart.log
 
 echo adding application content
 useradd roboshop &>>/tmp/cart.log
